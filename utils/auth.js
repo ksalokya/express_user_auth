@@ -5,5 +5,5 @@ export const compareHash = async (password, hash) => {
 }
 
 export const generateHash = async (password) => {
-    return bcrypt.hash(password, process.env.SALT_ROUNDS)
+    return bcrypt.hash(password, 10)
 }
